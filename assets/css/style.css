@@ -1,0 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+.sticky-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.active {
+  color: white !important;
+  font-weight: bold;
+}

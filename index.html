@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website - Aam Setiana</title>
+
+        <!-- Link ke file CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- AOS Animation -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    </head>
+    <body class="bg-black text-white font-sans">
+        <!-- Navbar -->
+        <header
+            class="sticky-navbar flex justify-between items-center p-6 bg-gradient-to-r from-gray-800 to-black shadow-lg">
+            <!-- Logo di Pojok Kiri -->
+            <a href="#hero">
+                <img src="assets/images/logo/logo-fix.svg" alt="Logo"
+                    class="w-12 h-15">
+            </a>
+            <!-- Navigation di Tengah -->
+            <nav
+                class="absolute left-1/2 transform -translate-x-1/2 hidden md:flex space-x-8">
+                <a href="#hero"
+                    class="nav-link text-gray-300 hover:text-white transition duration-300">Home</a>
+                <a href="#projects"
+                    class="nav-link text-gray-300 hover:text-white transition duration-300">Projects</a>
+                <a href="#experience"
+                    class="nav-link text-gray-300 hover:text-white transition duration-300">Experience</a>
+                <a href="#contact"
+                    class="nav-link text-gray-300 hover:text-white transition duration-300">Contact</a>
+            </nav>
+
+            <!-- Mobile Menu Toggle di Kanan -->
+            <button id="menu-toggle"
+                class="md:hidden text-gray-300 hover:text-white focus:outline-none transition duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                    class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 5.25h16.5m-16.5 6h16.5m-16.5 6h16.5" />
+                </svg>
+            </button>
+        </header>
+
+        <nav id="mobile-menu"
+            class="hidden md:hidden flex flex-col space-y-4 p-6 bg-gray-800">
+            <a href="#hero"
+                class="nav-link text-gray-400 hover:text-white">Home</a>
+            <a href="#projects"
+                class="nav-link text-gray-400 hover:text-white">Projects</a>
+            <a href="#experience"
+                class="nav-link text-gray-400 hover:text-white">Experience</a>
+            <a href="#contact"
+                class="nav-link text-gray-400 hover:text-white">Contact</a>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="hero" class="text-center py-16 px-4" data-aos="fade-up">
+            <div class="flex justify-center">
+                <img src="assets/images/profil/aam.jpg" alt="Avatar"
+                    class="w-32 h-32 rounded-full border-4 border-gray-700 shadow-lg object-cover" />
+            </div>
+            <h1 class="text-4xl font-bold mt-8" data-aos="zoom-in">I build
+                powerful web solutions
+                <br />
+                <span
+                    class="text-transparent bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 bg-clip-text"
+                    data-aos="fade-in">craft seamless user experiences!</span>
+            </h1>
+            <p class="mt-4 text-gray-400 max-w-lg mx-auto" data-aos="fade-left">
+                As a full-stack developer, I specialize in creating scalable web
+                applications, from intuitive front-end interfaces to robust
+                back-end systems.
+            </p>
+            <div class="mt-8 flex justify-center space-x-4"
+                data-aos="fade-right">
+                <button onclick="location.href='#projects'"
+                    class="bg-purple-500 px-6 py-2 rounded-lg text-white font-medium hover:bg-purple-700">
+                    Explore More
+                </button>
+                <button
+                    class="border border-white px-6 py-2 rounded-lg font-medium hover:bg-white hover:text-black">Download
+                    CV</button>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 px-4">
+            <h2 class="text-3xl font-bold text-center mb-12"
+                data-aos="fade-up">Projects</h2>
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div
+                    class="bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col"
+                    data-aos="flip-right">
+                    <img src="assets/images/project/project-konten.svg"
+                        alt="Minimarket POS Project"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold mb-2">Minimarket POS</h3>
+                        <p class="text-gray-400 mb-4 flex-grow">A simple and
+                            efficient point-of-sale system for managing sales
+                            and inventory in a minimarket.</p>
+                        <a
+                            href="https://github.com/aamsetiana/kasir_ukk_aamsetiana.git"
+                            class="text-purple-500 hover:underline mt-auto"
+                            target="_blank">View Project &rarr;</a>
+                    </div>
+                </div>
+                <div
+                    class="bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col"
+                    data-aos="flip-left">
+                    <img src="assets/images/project/news-konten.svg"
+                        alt="News Website" class="w-full h-48 object-cover">
+                    <div class="p-6 flex-grow flex flex-col">
+                        <h3 class="text-xl font-bold mb-2">News Website</h3>
+                        <p class="text-gray-400 mb-4 flex-grow">Stay updated
+                            with the latest news and trending topics.</p>
+                        <a
+                            href="https://github.com/aamsetiana/website-artikel.git"
+                            class="text-purple-500 hover:underline mt-auto"
+                            target="_blank">View Project &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-16 px-4">
+            <h2 class="text-3xl font-bold text-center mb-12"
+                data-aos="fade-up">Experience</h2>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <!-- Experience 1 -->
+                <div data-aos="fade-right" data-aos-delay="200"
+                    class="flex flex-col md:flex-row items-start md:space-x-4">
+                    <img src="assets/images/experience/bapli.jpg"
+                        alt="Bengkel Aplikasi Nusantara Logo"
+                        class="w-12 h-12 mb-4 md:mb-0">
+                    <div>
+                        <h3 class="text-xl font-bold">Intern at Bengkel Aplikasi
+                            Nusantara Kuningan</h3>
+                        <p class="text-gray-400">Oct 2023 - Dec 2023</p>
+                        <p class="mt-2 text-gray-400">
+                            During my internship, I developed an employee
+                            attendance application, created user manuals, and
+                            designed Instagram content.
+                        </p>
+                    </div>
+                </div>
+                <!-- Experience 2 -->
+                <div data-aos="fade-right" data-aos-delay="300"
+                    class="flex flex-col md:flex-row items-start md:space-x-4">
+                    <img src="assets/images/experience/filmoraa.png"
+                        alt="Videography Icon" class="w-12 h-12 mb-4 md:mb-0">
+                    <div>
+                        <h3 class="text-xl font-bold">Video Editor &
+                            Videographer for Travel Vlogs</h3>
+                        <p class="text-gray-400">Jan 2023 - Mar 2023</p>
+                        <p class="mt-2 text-gray-400">
+                            Captured stunning landscapes and crafted engaging
+                            narratives for YouTube, specializing in Filmora
+                            video editing.
+                        </p>
+                    </div>
+                </div>
+                <!-- Experience 3 -->
+                <div data-aos="fade-right" data-aos-delay="400"
+                    class="flex flex-col md:flex-row items-start md:space-x-4">
+                    <img src="assets/images/experience/mm.jpg"
+                        alt="Multimedia Icon" class="w-12 h-12 mb-4 md:mb-0">
+                    <div>
+                        <h3 class="text-xl font-bold">Head of Multimedia
+                            Club</h3>
+                        <p class="text-gray-400">Jan 2023 - Jan 2024</p>
+                        <p class="mt-2 text-gray-400">
+                            Led various multimedia projects, including films and
+                            event documentation, leveraging teamwork and
+                            creativity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 px-4 bg-[#000000]">
+            <h2 class="text-3xl font-bold text-center mb-12"
+                data-aos="fade-up">Contact Me</h2>
+            <div class="max-w-4xl mx-auto text-center">
+                <p class="text-gray-400 mb-8" data-aos="fade-in">Feel free to
+                    reach out to me for collaborations, inquiries, or just to
+                    say hi!</p>
+                <form action="#" method="POST" class="space-y-6">
+                    <div
+                        class="flex flex-col md:flex-row space-x-0 md:space-x-4">
+                        <div class="flex flex-col w-full md:w-1/2"
+                            data-aos="fade-up" data-aos-delay="100">
+                            <label for="name"
+                                class="text-gray-300 text-sm font-semibold">Your
+                                Name</label>
+                            <input type="text" id="name" name="name"
+                                placeholder="John Doe"
+                                class="bg-gray-700 text-white p-3 rounded-lg mt-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                                required>
+                        </div>
+                        <div class="flex flex-col w-full md:w-1/2"
+                            data-aos="fade-up" data-aos-delay="200">
+                            <label for="email"
+                                class="text-gray-300 text-sm font-semibold">Your
+                                Email</label>
+                            <input type="email" id="email" name="email"
+                                placeholder="johndoe@example.com"
+                                class="bg-gray-700 text-white p-3 rounded-lg mt-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                                required>
+                        </div>
+                    </div>
+                    <div class="flex flex-col" data-aos="fade-up"
+                        data-aos-delay="300">
+                        <label for="message"
+                            class="text-gray-300 text-sm font-semibold">Your
+                            Message</label>
+                        <textarea id="message" name="message" rows="6"
+                            placeholder="Your message here..."
+                            class="bg-gray-700 text-white p-3 rounded-lg mt-2 focus:outline-none focus:ring-2 focus:ring-purple-500"
+                            required></textarea>
+                    </div>
+                    <button type="submit"
+                        class="w-full md:w-1/3 mx-auto bg-purple-500 hover:bg-purple-700 text-white py-3 rounded-lg font-semibold mt-6 transition duration-300"
+                        data-aos="fade-up" data-aos-delay="400">Send
+                        Message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer id="footer" class="bg-gray-900 py-10 text-gray-300">
+            <div
+                class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- About Section -->
+                <div class="text-center md:text-left">
+                    <h3 class="text-xl font-bold">About Me</h3>
+                    <p class="text-gray-400 mt-2">Passionate about web
+                        development and video editing. Let’s collaborate and
+                        build something amazing together.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="text-center">
+                    <h3 class="text-xl font-bold">Quick Links</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#hero"
+                                class="hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#projects"
+                                class="hover:text-white transition duration-300">Projects</a></li>
+                        <li><a href="#experience"
+                                class="hover:text-white transition duration-300">Experience</a></li>
+                        <li><a href="#contact"
+                                class="hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="text-center">
+                    <h3 class="text-xl font-bold">Contact Info</h3>
+                    <p class="mt-4 text-gray-400">Email: <a
+                            href="mailto:aamsetiana@domain.com"
+                            class="hover:text-white">aamsetiana@domain.com</a></p>
+                    <p class="mt-2 text-gray-400">Location: Kuningan,
+                        Indonesia</p>
+                </div>
+            </div>
+            <div class="text-center text-gray-400 mt-8">
+                <p>© 2024 Aam Setiana. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+        <!-- Link ke file JavaScript -->
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
